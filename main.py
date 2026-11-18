@@ -34,5 +34,7 @@ for name in os.listdir(OUT_DIR):
     else:
         os.remove(path)
 shutil.copyfile(SRC, DST)
+with open(DST, "rb") as f:
+    assert f.read(8) == b"\x89PNG\r\n\x1a\n", "copied file is not a PNG"
 assert sha256(DST) == sha256(SRC), "copied image differs from source"
 print("wrote", DST, sha256(DST))

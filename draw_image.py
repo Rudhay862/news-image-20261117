@@ -79,7 +79,7 @@ d.text((32, ly + 104), "Road span collapses after hit on the",
        font=font(FR, 30), fill=(60, 60, 60))
 d.text((32, ly + 140), "link to occupied Crimea; Kyiv calls it",
        font=font(FR, 30), fill=(60, 60, 60))
-d.text((32, ly + 176), "\u201can unprecedented operation\u201d.",
+d.text((32, ly + 176), "\u201can unprecedented operation\u201d \u2014 day two.",
        font=font(FR, 30), fill=(60, 60, 60))
 # simple bridge drawing, right of the lead text
 bx, by = 714, ly + 60
@@ -128,9 +128,9 @@ for i, (label, color, head, deck) in enumerate(cards):
 ty = 936
 d.rectangle([0, ty, W, ty + 42], fill=NAVY)
 d.text((32, ty + 9),
-       "ALSO: ULA Vulcan rocket fails \u2014 40 Amazon satellites lost  \u00b7  "
-       "Depardieu admits assault charge",
-       font=font(FR, 21), fill=(255, 255, 255))
+       "ALSO: ULA Vulcan rocket fails\u201440 Amazon satellites lost \u00b7 "
+       "Depardieu admits assault \u00b7 EU charges Temu",
+       font=font(FR, 19), fill=(255, 255, 255))
 d.text((32, H - 24),
        "17 November 2026  \u00b7  Sources: BBC, AP, Reuters, CNN, Al Jazeera",
        font=font(FR, 19), fill=(110, 100, 85))
